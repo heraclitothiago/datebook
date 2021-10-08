@@ -1,6 +1,6 @@
-import { ICalendar } from 'datebook'
+import { GoogleCalendar } from 'datebook'
 
-const config: CalendarOptions = {
+const config = CalendarOptions = {
   title: 'Happy Hour',
   location: 'The Bar, New York, NY',
   description: 'Let\'s blow off some steam with a tall cold one!',
@@ -26,5 +26,5 @@ const config: CalendarOptions = {
   }
 }
 
-const icalendar = new ICalendar(config)
-icalendar.download()
+const googleCalendar = new GoogleCalendar(config)
+googleCalendar.render()
